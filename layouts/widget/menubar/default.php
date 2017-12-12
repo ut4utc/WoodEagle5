@@ -11,20 +11,12 @@
 defined('_JEXEC') or die;
 ?>
 <div id="ktop">
-	<div id="ktopmenu">
-		<div id="ktab">
-			<?php echo $this->subRequest('Widget/Menu'); ?>
-		</div>
-	</div>
+    <?php echo $this->subRequest('Widget/Menu'); ?>
 </div>
-<div class="kblock kpbox">
-	<div class="kcontainer" id="kprofilebox">
-		<div class="kbody">
-			<?php if (KunenaUserHelper::getMyself()) : ?>
-				<?php echo $this->subRequest('Widget/Login'); ?>
-			<?php else : ?>
-				<?php echo $this->subRequest('Widget/Logout'); ?>
-			<?php endif; ?>
-		</div>
-	</div>
+<div id="kprofilebox">
+    <?php if (KunenaUserHelper::getMyself()) : ?>
+        <?php echo $this->subRequest('Widget/Login'); ?>
+    <?php else : ?>
+        <?php echo $this->subRequest('Widget/Logout'); ?>
+    <?php endif; ?>
 </div>

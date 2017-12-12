@@ -1,21 +1,101 @@
-.kblock .kcontainer {
-    display: table-row;
-}
-#Kunena table tr th, #Kunena table tr td, #Kunena div, #Kunena p, #Kunena span, #Kunena ul li, #Kunena ul li a {
-    font-size: 0.95em;
+/*
+* Main Kunena css file
+*/
+
+#Kunena {
+    background: rgba(0, 0, 0, 0) url("../images/kunena/bg-46.jpg") no-repeat fixed center center / cover ;
 }
 #ktop {
     border-color: #595240;
-	border-image: none;
+    border-image: none;
     border-style: solid;
     border-width: 0 0 3px;
     line-height: 0;
     margin: 0;
     vertical-align: bottom;
 }
-#ktopmenu {
-    display: inline;
+#ktop ul {
+    display: inline-block;
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
 }
+#ktop ul.menu li {
+    border: 0 none;
+    display: inline;
+    float: left;
+    margin: 2px 2px 0 0;
+    padding: 0;
+}
+#ktop ul.menu li a {
+    border-radius: 0;
+    padding: 6px 15px;
+}
+#ktop ul.menu li.active a,
+#ktop li#current.selected a {
+    background-color: #595240;
+    color: #fff;
+}
+#ktop li a,
+dl.tabs dt {
+    background-color: #ffffff;
+}
+#ktop ul li a:hover,
+dl.tabs dt:hover {
+    background-color: #595240;
+    color: #fff!important;
+}
+
+/* Top ProfileBox + form */
+#kprofilebox {
+    background: #fff;
+    padding: 15px;
+}
+
+/* login, pass, remember input's */
+#klogin, #kpassword, #kskey, #kremember {
+    display: inline-block;
+}
+#kprofilebox input[type="submit"] {
+    padding: 10px 33px;
+}
+#kprofilebox input[type="text"],
+#kprofilebox input[type="password"] {
+    border: 1px solid #bbb;
+    height: auto;
+    line-height: normal;
+    padding: 4px;
+}
+.k_guest + form > .input div {
+    padding: 10px;
+}
+/* Link blocks = forgot pass, forgot login, register link */
+.klink-block > span {
+    padding: 10px;
+}
+
+
+
+
+
+
+
+/*
+#Kunena div.kthead-title span a {
+    display: inline-block;
+    float: left;
+    font-size: 0.917em;
+    font-weight: bold;
+    margin-bottom: 3px;
+    padding-bottom: 0;
+}
+
+#Kunena a {
+    font-weight: normal;
+    text-decoration: none;
+}
+
+
 #ktab ul {
     display: inline-block;
     padding: 0;
@@ -27,12 +107,7 @@
     margin: 2px 2px 0 0;
     padding: 0;
 }
-#ktab ul.menu li.active a, 
-#ktab li#current.selected a, 
-dl.tabs dt.open {
-    background-color: #595240;
-	color: #fff;
-}
+
 #Kunena ul li, 
 #Kunena ul li a {
     background: rgba(0, 0, 0, 0) none repeat scroll 0 center;
@@ -47,14 +122,7 @@ dl.tabs dt.open {
     border-radius: 0;
     padding: 6px 16px;
 }
-#ktab li a, dl.tabs dt {
-    background-color: #ffffff;
-}
 
-#ktab ul li a:hover, dl.tabs dt:hover {
-    background-color: #595240;
-	color: #fff!important;
-}
 
 #ktab a {
     border: 0 none;
@@ -160,14 +228,14 @@ ul.kprofilebox-link li a.btn.btn-link:hover {
 img {
     border: 0 none;
 }
-/* Button */
+/* Button *
 ul.kprofilebox-welcome li input.kbutton {
     font-size: 12px;
     margin: 0;
     padding: 6px 12px;
 }
 
-/* ##################### breadcrumbs #################### */
+ ##################### breadcrumbs #################### *
 .kforum-pathway {
     padding: 8px 10px;
 }
@@ -193,7 +261,7 @@ ul.kprofilebox-welcome li input.kbutton {
     padding-right: 3px;
 }
 
-/* ####################### mark all cats read ################################ */
+  mark all cats read
 .klist-markallcatsread {
     border-color: #d4ccc0;
 }
@@ -264,7 +332,7 @@ div#Kunena input, div#Kunena select, div#Kunena select:focus, div#Kunena select:
     padding: 0 10px 0 2px;
 }
 
-/* ####################### Header ################################ */
+/* ####################### Header ################################
 .kblock .kheader {
     background: #fff;
     padding: 8px 15px;
@@ -282,7 +350,7 @@ div#Kunena input, div#Kunena select, div#Kunena select:focus, div#Kunena select:
     text-transform: none;
     width: 100%;
 }
-/*#########################  Main Table       ###################### */
+/*#########################  Main Table  ######################
 #Kunena tbody {
     background: #fff none repeat scroll 0 0;
 }
@@ -299,7 +367,7 @@ div#Kunena input, div#Kunena select, div#Kunena select:focus, div#Kunena select:
 .krow2:nth-child(odd) {
 	background-color: #f8f4ed;
 }
-.krow2:nth-child(even) {
+.krow1:nth-child(even) {
 	background-color: #fff;
 }
 div#Kunena td.kcol-mid, 

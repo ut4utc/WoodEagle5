@@ -19,16 +19,6 @@ defined('_JEXEC') or die;
 class KunenaTemplateWood_Eagle5 extends KunenaTemplate
 {
 	/**
-	 * List of parent template names.
-	 *
-	 * This template will automatically search for missing files from listed parent templates.
-	 * The feature allows you to create one base template and only override changed files.
-	 *
-	 * @var array
-	 */
-	protected $default = array('crypsis');
-
-	/**
 	 * Template initialization.
 	 *
 	 * @return void
@@ -38,13 +28,15 @@ class KunenaTemplateWood_Eagle5 extends KunenaTemplate
 		KunenaTemplate::getInstance()->loadLanguage();
 
 		// Template requires Bootstrap javascript
-		JHtml::_('bootstrap.framework');
+		// JHtml::_('bootstrap.framework');
+
+        // TODO-alex make checkbox in a theme where chose using bootstrap
 
 		// Template also requires jQuery framework.
-		JHtml::_('jquery.framework');
-		JHtml::_('stylesheet', 'media/jui/css/bootstrap.min.css');
-		JHtml::_('stylesheet', 'media/jui/css/bootstrap-responsive.min.css');
-		JHtml::_('stylesheet', 'media/jui/css/bootstrap-extended.css');
+	//	JHtml::_('jquery.framework');
+	//	JHtml::_('stylesheet', 'media/jui/css/bootstrap.min.css');
+	//	JHtml::_('stylesheet', 'media/jui/css/bootstrap-responsive.min.css');
+	//	JHtml::_('stylesheet', 'media/jui/css/bootstrap-extended.css');
 
 		// Load JavaScript.
 		$this->addScript('assets/js/main.js');
@@ -58,22 +50,19 @@ class KunenaTemplateWood_Eagle5 extends KunenaTemplate
 		}
 
 		// Add CSS
-		$filename = JPATH_SITE . '/components/com_kunena/template/wood_eagle5/assets/css/kunena.css';
+        $filename = JPATH_SITE . '/components/com_kunena/template/wood_eagle5/assets/css/kunena.css';
 
-		if (file_exists($filename))
+		if (file_exists($filename) )
 		{
 			$this->addStyleSheet('assets/css/kunena.css');
 		}
-
-		//$document = JFactory::getDocument();
-		//$document->addStyleDeclaration($styles);
 
 		parent::initialize();
 	}
 
 	/**
-	 * @param        $filename
-	 * @param   string $group
+	 * @param  string $filename
+	 * @param  string $group
 	 *
 	 * @return JDocument
 	 */
