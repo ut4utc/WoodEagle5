@@ -58,6 +58,13 @@ class KunenaTemplateWood_Eagle5 extends KunenaTemplate
 			$this->addStyleSheet('assets/css/kunena.css');
 		}
 
+		$fontawesome = $this->ktemplate->params->get('fontawesome');
+
+		if ($fontawesome)
+		{
+			$doc->addStyleSheet("assets/css/font-awesome.min.css");
+		}
+
 		parent::initialize();
 	}
 

@@ -1,8 +1,115 @@
 /*
-* Main Kunena css file
+* Main kunena css file
 */
 
-#Kunena {}
+#kunena {
+    position: relative;
+    font-size: 0.917em;
+    margin-top: 20px;
+}
+
+/* Typography */
+
+#kunena .path-element-first a:link,
+#kunena .path-element-first a:visited {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 center;
+    font-weight: normal;
+    text-decoration: none;
+}
+.mfp-iframe-holder {
+    padding: 10px;
+}
+.mfp-iframe-holder .mfp-content {
+    height: 100%;
+    max-width: 100%;
+    width: 100%;
+}
+.mfp-iframe-scaler iframe {
+    background: #fff none repeat scroll 0 0;
+    box-shadow: none;
+    box-sizing: border-box;
+    padding: 10px;
+}
+#kunena {
+    font-family: "HelveticaNeue","Helvetica Neue",Arial,sans-serif;
+}
+#kunena h1, #kunena h2, #kunena h3, #kunena h4, #kunena h5, #kunena h6, #kunena div.kthead-title a {
+    font-family: "Scada",sans-serif;
+}
+#kunena div.kblock > div.kheader, #kunena .kblock div.kheader {
+    background: #ffffff none repeat scroll 0 0;
+}
+#kunena #ktop span.ktoggler {
+    background: #ffffff none repeat scroll 0 0;
+}
+#kunena #ktab a:hover, #kunena #ktab li.kunena-item-active a {
+    background-color: #ffffff;
+}
+#kunena #ktab ul.menu li.active a {
+    background-color: #ffffff;
+}
+#kunena a:link, #kunena a:visited {
+    color: #ffffff;
+}
+#kunena a:focus {
+    outline: medium none;
+}
+#kunena a:hover {
+    color: #ff0000;
+}
+#kunena .kheader h2, #kunena div.ktitle-desc, #kunena .kheader h2 a:link, #kunena .kheader h2 a:visited, #kunena .kheader h2 a:active, #kunena .kheader h2 a:focus {
+    color: #595240;
+}
+#kunena .kheader h2 a:focus {
+    outline: medium none;
+}
+#kunena a:link, #kunena a:visited, #kunena a:active {
+    color: #890916;
+}
+#kunena a:focus {
+    outline: medium none;
+}
+#kunena a:hover {
+    color: #d66671;
+}
+#kunena #kstatslistright a:hover {
+    color: #d66671;
+}
+#kunena .klist-markallcatsread {
+    background-color: #f8f4ed;
+}
+#kunena td.kprofile-left {
+    background-color: #f8f4ed;
+}
+#kunena ul#kpost-profiletop {
+    background-color: #f8f4ed;
+}
+#kunena td.kprofile-right {
+    background-color: #f8f4ed;
+}
+#kunena td.kprofile-bottom {
+    background-color: #f8f4ed;
+}
+#kunena div.kannouncement div.kheader {
+    background: #ffffff none repeat scroll 0 0;
+}
+#kunena div#kannouncement .kanndesc {
+    background: #ffffff none repeat scroll 0 0;
+}
+#kunena div.kfrontstats div.kheader {
+    background: #ffffff none repeat scroll 0 0;
+}
+#kunena div.kwhoisonline div.kheader {
+    background: #ffffff none repeat scroll 0 0;
+}
+#kunena #ktab a, #kunena dl.tabs dt {
+    background-color: #ffffff;
+}
+i[class^="fa fa-"], i[class*=" fa-"] {
+    color: #B8AD9E;
+}
+
+
 #ktop {
     border-color: #595240;
     border-image: none;
@@ -70,7 +177,7 @@ dl.tabs dt:hover {
 .klink-block > span {
     padding: 10px;
 }
-/* Kunena profile - pic, logout button */
+/* kunena profile - pic, logout button */
 .kprofilebox-left {
     display: inline-block;
     vertical-align: top;
@@ -93,202 +200,19 @@ ul.kprofilebox-link li {
 ul.kprofilebox-welcome li form {
     display: inline-block;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-#Kunena div.kthead-title span a {
-    display: inline-block;
-    float: left;
-    font-size: 0.917em;
-    font-weight: bold;
-    margin-bottom: 3px;
-    padding-bottom: 0;
-}
-
-#Kunena a {
-    font-weight: normal;
-    text-decoration: none;
-}
-
-
-#ktab ul {
-    display: inline-block;
-    padding: 0;
-}
-#ktab li, #ktab div.moduletable ul.menu li {
-    border: 0 none;
-    display: inline;
-    float: left;
-    margin: 2px 2px 0 0;
-    padding: 0;
-}
-
-#Kunena ul li, 
-#Kunena ul li a {
-    background: rgba(0, 0, 0, 0) none repeat scroll 0 center;
-    margin: 0;
-    padding: 0;
-}
-#ktab {
-    margin: 0 20px 0 0;
-    top: 0;
-}
-#ktab li a {
-    border-radius: 0;
-    padding: 6px 16px;
-}
-
-
-#ktab a {
-    border: 0 none;
-    display: block;
-    float: left;
-    font-size: 1em;
-    line-height: 2.3em;
-    margin: 0;
-    text-decoration: none;
-    text-indent: 0;
-}
-#ktab a span {
-    font-size: 15px;
-}
-#Kunena a:link, #Kunena a:visited, #Kunena a:active {
-    color: #890916;
-}
-#Kunena a:link, #Kunena a:visited {
-    color: #ffffff;
-}
-#Kunena a:hover {
-	color: #d66671;
-}
-
-.kprofilebox a {
-    font-weight: 700;
-    line-height: 100%;
-}
-ul.kprofilebox-link {
-    float: right;
-}
-ul.kprofilebox-link li {
-    display: block;
-}
-.kblock {
-	border-bottom: medium none;
-    border-color: #d4ccc0;
-    border-image: none;
-    border-style: none none solid;
-    border-width: 0 0 1px;
-    clear: both;
-    display: table;
-    margin: 0;
-    table-layout: fixed;
-    width: 100%;
-}
-.kblock.kcontainer {
-    display: table-row;
-}
-#Kunena div.kblock div.kbody {
-    border-style: solid;
-    border-width: 0 1px;
-    overflow: hidden;
-    overflow-wrap: break-word;
-}
-table.kflattable {
-    border-bottom: 1px solid;
-}
-#Kunena table, #Kunena tbody, #Kunena td, #Kunena tr {
-    border-color: #d4ccc0;
-}
-#Kunena table {
-    border-collapse: collapse;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-}
-#Kunena tr.krow1 td {
-    padding: 4px 8px;
-} 
-div#Kunena td.kcol-mid, div#Kunena tr.krow1 td, div#Kunena tr.krow2 td {
-    padding: 15px;
-}
-.kprofilebox {
-	background: #fff;
-	margin-bottom: 0;
-}
-.kprofilebox-left {
-    border-right: 1px solid #d4ccc0;;
-    padding: 15px;
-    vertical-align: middle;
-    width: 9%;
-}
-td.kprofileboxcnt {
-    padding: 15px;
-    text-align: left;
-    vertical-align: middle;
-    width: 91%;
-}
-ul.kprofilebox-link li a.btn.btn-link {
-	color: #890916;
-}
-ul.kprofilebox-link li a.btn.btn-link:hover {
-	color: #890916;
-}
-#Kunena img.kavatar {
-    height: auto;
-    max-width: inherit;
-}
-#Kunena img {
-    max-width: none;
-}
-img {
-    border: 0 none;
-}
-/* Button *
-ul.kprofilebox-welcome li input.kbutton {
-    font-size: 12px;
-    margin: 0;
-    padding: 6px 12px;
-}
-
- ##################### breadcrumbs #################### *
+/* Breadcrumbs */
 .kforum-pathway {
+    background-color: #f8f4ed;
+    border: 1px solid #d4ccc0;
     padding: 8px 10px;
 }
-.kblock.kpathway .kforum-pathway {
-    background-color: #f8f4ed;
-}
 .path-element-first {
-    background: rgba(0, 0, 0, 0) url("/components/com_kunena/template/wood_eagle5/assets/img/pathway_start.png") no-repeat scroll left center;
+    background: rgba(0, 0, 0, 0) url("/components/com_kunena/template/wood_eagle5/assets/img/icons/pathway_start.png") no-repeat scroll left center;
+    display: inline;
     padding: 1px 3px 1px 27px;
-	display: inline;
-    font-weight: normal;
-    height: 18px;
-    line-height: 18px;
+    margin: 5px;
 }
-.kforum-pathway .path-element,
-.kforum-pathway-bottom .path-element {
+.path-element {
     background: rgba(0, 0, 0, 0) url("/components/com_kunena/template/wood_eagle5/assets/img/icons/arrow.png") no-repeat scroll left center;
     display: inline;
     font-weight: normal;
@@ -297,35 +221,21 @@ ul.kprofilebox-welcome li input.kbutton {
     padding-left: 12px;
     padding-right: 3px;
 }
-
-  mark all cats read
-.klist-markallcatsread {
-    border-color: #d4ccc0;
-}
-.klist-markallcatsread {
-    background-color: #f8f4ed;
-}
-.klist-markallcatsread {
-    min-height: 27px;
-    overflow: hidden;
-    padding: 0;
-}
 .fltlft {
     float: left;
 }
 .fltrt {
     float: right;
 }
-div#Kunena .fltrt {
-    margin-right: 15px;
+.kright {
+    text-align: right;
 }
-#Kunena form, #Kunena select, #Kunena textarea, #Kunena input, div.fltlft form {
-    height: auto;
-    margin: 0;
-    width: auto;
-}
-#Kunena .kbutton[type="submit"], #Kunena td.krowmoderation input.kbutton {
-    border-color: #595240;
+.klist-markallcatsread {
+    background-color: #f8f4ed;
+    border: 1px solid #d4ccc0;
+    min-height: 27px;
+    overflow: hidden;
+    padding: 0;
 }
 .klist-markallcatsread input.kbutton {
     font-size: 12px;
@@ -333,107 +243,215 @@ div#Kunena .fltrt {
     margin: 6px 15px;
     padding: 6px;
 }
-div#Kunena .button, div#Kunena .kbutton, div#Kunena input.kbutton {
-    border-radius: 2px;
-    font-weight: 400;
-    padding: 4px 12px;
-    text-transform: uppercase;
-}
-div#Kunena .kbutton {
-    cursor: pointer;
-}
-div#Kunena #jumpto .inputbox {
-    padding: 4px;
-}
-div#Kunena form#jumpto {
-    margin: 5px 0;
-}
-#Kunena #jumpto .inputbox {
-    max-width: 90%;
-}
-img.btnImage, div#Kunena input:not([type]), div#Kunena input[type="color"], div#Kunena input[type="date"], div#Kunena input[type="datetime-local"], div#Kunena input[type="datetime"], div#Kunena input[type="email"], div#Kunena input[type="month"], div#Kunena input[type="number"], div#Kunena input[type="password"], div#Kunena input[type="search"], div#Kunena input[type="tel"], div#Kunena input[type="text"], div#Kunena input[type="time"], div#Kunena input[type="url"], div#Kunena input[type="week"], div#Kunena select, div#Kunena select:focus, div#Kunena select:hover, div#Kunena textarea, #Kunena .krowmoderation select {
-    display: inline-block;
-}
-div#Kunena input, div#Kunena select, div#Kunena select:focus, div#Kunena select:hover, div#Kunena td.krowmoderation input.kbutton {
-    border: 1px solid #bbb;
-    padding: 4px;
-}
-#Kunena form, #Kunena select, #Kunena textarea, #Kunena input {
+.klist-markallcatsread select#catid {
     height: auto;
-    margin: 0;
-    width: auto;
+    margin: 4px;
 }
-#Kunena option {
-    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
-    font-size: 0.917em;
-    padding: 0 10px 0 2px;
+/* Forum */
+span.ktoggler a.close {
+    background: rgba(0, 0, 0, 0) url("/components/com_kunena/template/wood_eagle5/assets/img/icons/shrink-white.png") no-repeat scroll center center;
+    height: 16px;
+    width: 16px;
 }
-
-/* ####################### Header ################################
-.kblock .kheader {
-    background: #fff;
-    padding: 8px 15px;
+div.close {
+    color: #000;
+    float: right;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 20px;
+    opacity: 0.2;
+    text-shadow: 0 1px 0 #fff;
 }
 .kheader h1, .kheader h2 {
-    display: block;
-    font-size: 1.333em;
-    font-weight: bold;
-    line-height: 1.5em;
-    margin-bottom: 0;
-    margin-top: 0;
-    min-height: 1.6em;
-    padding-top: 2px;
-    text-align: left;
-    text-transform: none;
-    width: 100%;
-}
-/*#########################  Main Table  ######################
-#Kunena tbody {
-    background: #fff none repeat scroll 0 0;
-}
-#kflattable table tbody tr td {
-    border: 1px solid #d4ccc0;
+    font-family: Arial;
+    font-size: 17px;
     padding: 10px;
 }
-#Kunena div.kblock div.kbody {
-    border-style: solid;
-    border-width: 0 1px;
-    overflow: hidden;
-    overflow-wrap: break-word;
+.kheader h1 a {
+    margin: 0 8px;
 }
-.krow2:nth-child(odd) {
-	background-color: #f8f4ed;
+#kunena div.kblock span.select-toggle {
+    float: right;
+    height: 1px;
+    position: relative;
+    right: 25px;
+    top: 5px;
 }
-.krow1:nth-child(even) {
-	background-color: #fff;
+#kunena .kcheckbox {
+    float: right;
+    width: 20px;
 }
-div#Kunena td.kcol-mid, 
-div#Kunena tr.krow2 td {
+/* Table */
+.kbody tbody {
+    background: #fff none repeat scroll 0 0;
+}
+
+/* First color */
+
+td.kcol-mid {
+    border: 1px solid #d4ccc0;
+}
+tr.krow1 td,
+tr.krow2 td {
     padding: 15px;
 }
-span.knotloginforum, span.kreadforum {
-    background: rgba(0, 0, 0, 0) url("/components/com_kunena/template/wood_eagle5/assets/img/icons/folder_nonew.png") no-repeat scroll left center;
-	display: table;
-}
-span.kreadforum, span.knotloginforum {
-    background: rgba(0, 0, 0, 0) url("/components/com_kunena/template/wood_eagle5/assets/img/icons/folder_nonew.png") no-repeat scroll left center;
-    height: 32px;
-    width: 32px;
-}#Kunena td.kcol-first {
-    border-bottom-color: #d4ccc0;
-}
-#Kunena td.kcol-category-icon {
+#kunena div.kwhoisonline td.kcol-first,
+#kunena div.kgenstats td.kcol-first,
+#kunena div.kfrontstats td.kcol-first,
+td.kcol-category-icon {
     width: 1%;
 }
-#Kunena td.kcol-first {
-    border-bottom: 1px solid;
-    border-left: 0 none;
+td.kcol-mid {
+    border-bottom: 1px solid #d4ccc0;
+    border-left: 1px solid #d4ccc0;
     padding: 4px 8px;
+    vertical-align: middle;
+}
+td.kmycount,
+td.kcol-kcattopics,
+td.kcol-kcatreplies,
+td.kcol-ktopicicon,
+td.kcol-ktopicviews {
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+    width: 1%;
+}
+td.kcol-first {
+    border: 1px solid #d4ccc0;
     vertical-align: middle;
     white-space: nowrap;
 }
+span.kicon {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 center;
+    border: 0 none;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+span.knotloginforum,
+span.kreadforum {
+    background: rgba(0, 0, 0, 0) url("/components/com_kunena/template/wood_eagle5/assets/img/buttons/folder_nonew.png") no-repeat scroll left center;
+}
+span.kreadforum,
+span.knotloginforum {
+    background: rgba(0, 0, 0, 0) url("/components/com_kunena/template/wood_eagle5/assets/img/buttons/folder_nonew.png") no-repeat scroll left center;
+    height: 32px;
+    width: 32px;
+}
+/* Second color */
+.kl {}
+div.kthead-title a {
+    font-weight: bold;
+}
+div.kthead-title.kl span a i.fa.fa-rss {
+    color: orange;
+}
+.kthead-desc {
+    clear: left;
+    line-height: 1.2em;
+}
+td.kmycount, td.kcol-kcattopics, td.kcol-kcatreplies, td.kcol-ktopicicon, td.kcol-ktopicviews {
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+    width: 1%;
+}
+td.kcol-kcatlastpost {
+    text-align: left;
+    vertical-align: middle;
+    width: 25%;
+}
+.klatest-subject-by div {
+    font-size: 11px;
+    font-weight: normal;
+    line-height: 1.5em;
+}
+.klatest-subject-by div a {
+}
+.kcat-topics-number,
+.kcat-replies-number {
+    display: block;
+}
+.krow2:nth-child(odd) {
+    background-color: #f8f4ed;
+}
+.krow2:nth-child(even) {
+    background-color: #fff;
+}
 
+/* Topic */
 
+.kwhoicon {
+    background: rgba(0, 0, 0, 0) url("/components/com_kunena/template/wood_eagle5/assets/img/buttons/who_is_online.png") no-repeat scroll center top;
+    height: 32px;
+    width: 32px;
+}
+div#kunena .kcenter,
+div#kunena .klist-actions,
+div#kunena .klist-actions-bottom,
+div#kunena .klist-bottom,
+div#kunena .kpathway,
+div#kunena div#kforum-head,
+div#kunena div.kblock div.kfheadercontent,
+div#kunena div.kblock div.khelprulescontent,
+div#kunena table,
+div#kunena table.kblocktable,
+div#kunena tbody {
+    background: #fff none repeat scroll 0 0;
+}
+.klist-actions-goto {
+    height: 28px;
+    padding: 0 2px;
+    vertical-align: middle;
+    width: 1%;
+}
+span.kforumbottom {
+    background: rgba(0, 0, 0, 0) url("/components/com_kunena/template/wood_eagle5/assets/img/icons/bottom_arrow.gif") no-repeat scroll left center;
+    height: 15px;
+    width: 18px;
+}
+
+#kunena.layout .btn {
+    background-image: none;
+    border: medium none;
+    border-radius: 0;
+    box-shadow: none;
+    color: #333;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 13px;
+    line-height: 18px;
+    margin-bottom: 0;
+    padding: 4px 12px;
+    text-align: center;
+    text-shadow: none;
+    vertical-align: middle;
+}
+#kunena.layout #btn_thankyou,
+#kunena.layout #btn_unthankyou,
+#kunena.layout #btn_list,
+#kunena.layout .btn.btn-primary,
+#kunena.layout .klist-actions .btn,
+#kunena.layout .kmessage-left .btn,
+#kunena.layout #topic-actions .btn,
+#kunena.layout .kmessage-buttons-row .btn {
+    background-color: #737373;
+    color: #fff;
+    margin: 5px 0;
+}
+
+td.klist-actions-forum a#btn_create.btn.btn-success {
+    background-color: #595240;
+}
+
+#kunena td.kcol-ktopicreplies strong {
+    display: block;
+    font-size: 2.091em;
+    font-weight: normal;
+    line-height: 1.3;
+    text-align: center;
+}
 
 
 

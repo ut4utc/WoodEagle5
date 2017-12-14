@@ -17,26 +17,24 @@
 defined('_JEXEC') or die;
 ?>
 
-<div class="klist-markallcatsread kcontainer">
-	<div class="ksectionbody">
-		<div class="fltlft">
-			<?php if (!empty(KunenaForumCategoryHelper::get()->getMarkReadUrl())) : ?>
-				<form action="<?php echo KunenaRoute::_('index.php?option=com_kunena') ?>" name="markAllForumsRead" method="post">
-					<input type="hidden" name="view" value="category" />
-					<input type="hidden" name="task" value="markread" />
+<div class="klist-markallcatsread">
+    <div class="fltlft">
+        <?php if (!empty(KunenaForumCategoryHelper::get()->getMarkReadUrl())) : ?>
+            <form action="<?php echo KunenaRoute::_('index.php?option=com_kunena') ?>" name="markAllForumsRead" method="post">
+                <input type="hidden" name="view" value="category" />
+                <input type="hidden" name="task" value="markread" />
 
-					<?php echo JHtml::_( 'form.token' ); ?>
-					<input type="submit" class="kbutton ks" value="<?php echo JText::_('COM_KUNENA_MARK_ALL_READ'); ?>" />
-				</form>
-			<?php endif;?>
-		</div>
-		<div class="fltrt">
-			<?php if ($this->config->enableforumjump)
-			{
-			echo $this->subLayout('Widget/Forumjump')->set('categorylist', $this->categorylist);
-			} ?>
-		</div>
-	</div>
+                <?php echo JHtml::_( 'form.token' ); ?>
+                <input type="submit" class="kbutton ks" value="<?php echo JText::_('COM_KUNENA_MARK_ALL_READ'); ?>" />
+            </form>
+        <?php endif;?>
+    </div>
+    <div class="fltrt">
+        <?php if ($this->config->enableforumjump)
+        {
+        echo $this->subLayout('Widget/Forumjump')->set('categorylist', $this->categorylist);
+        } ?>
+    </div>
 </div>
 
 <?php
@@ -229,21 +227,19 @@ foreach ($this->sections as $section) :
 
 										<td class="kcol-mid kcol-kcatlastpost">
 											<?php if ($avatar) : ?>
-											<span class="klatest-avatar hidden-phone">
+											<div class="klatest-avatar hidden-phone">
 												<?php echo $author->getLink($avatar); ?>
-											</span>
+											</div>
 											<?php endif; ?>
 											<div class="klatest-subject-by ks hidden-phone">
-												<span><?php echo $this->getLastPostLink($category, null, null, null, null, false, true) ?></span>
-												<br>
-												<span><?php echo JText::sprintf('COM_KUNENA_BY_X', $author->getLink(null, '', '', '', null, $category->id)); ?></span>
-												<br>
-												<span><?php echo $time->toKunena('config_post_dateformat'); ?></span>
+												<div><?php echo $this->getLastPostLink($category, null, null, null, null, false, true) ?></div>
+												<div><?php echo JText::sprintf('COM_KUNENA_BY_X', $author->getLink(null, '', '', '', null, $category->id)); ?></div>
+												<div><?php echo $time->toKunena('config_post_dateformat'); ?></div>
 											</div>
 										</td>
 									<?php else : ?>
 										<td class="kcol-mid kcol-knoposts">
-												<?php echo JText::_('COM_KUNENA_X_TOPICS_0'); ?>
+                                            <?php echo JText::_('COM_KUNENA_X_TOPICS_0'); ?>
 										</td>
 									<?php endif; ?>
 								</tr>

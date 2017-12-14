@@ -14,21 +14,15 @@ $pathway = $this->breadcrumb->getPathway();
 $item = array_shift($pathway);
 
 if ($item) : ?>
-<div class="kblock kpathway breadcrumbs-2">
-	<div class="kcontainer">
-		<div class="ksectionbody">
-			<div class="kforum-pathway">
-				<div class="path-element-first">
-					<a href="<?php echo $item->link; ?>" rel="nofollow"><?php echo $this->escape($item->name); ?></a>
-				</div>
+<div class="kforum-pathway">
+    <div class="path-element-first">
+        <a href="<?php echo $item->link; ?>" rel="nofollow"><?php echo $this->escape($item->name); ?></a>
+    </div>
 
-				<?php foreach($pathway as $item) : ?>
-				<div class="path-element">
-					<a href="<?php echo $item->link; ?>" rel="nofollow"><?php echo $this->escape($item->name); ?></a>
-				</div>
-				<?php endforeach; ?>
-			</div>
-		</div>
-	</div>
+    <?php foreach($pathway as $item) : ?>
+    <div class="path-element">
+        <a href="<?php echo $item->link; ?>" rel="nofollow"><?php echo $this->escape($item->name); ?></a>
+    </div>
+    <?php endforeach; ?>
 </div>
 <?php endif; ?>
