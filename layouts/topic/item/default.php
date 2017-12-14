@@ -95,9 +95,9 @@ if ($this->ktemplate->params->get('displayModule'))
 
 <div class="kblock">
 	<div class="kheader">
-		<h1>
+		<h1 class="topic">
 			<?php
-			echo JText::_('COM_KUNENA_TOPIC');
+			//echo JText::_('COM_KUNENA_TOPIC');
 			if ($this->ktemplate->params->get('labels') != 0)
 			{
 				echo $this->subLayout('Widget/Label')->set('topic', $this->topic)->setLayout('default');

@@ -37,9 +37,9 @@ else
 					</span>
 					<span class="kmsgdate kmsgdate-left"
 					      title="<?php echo KunenaDate::getInstance($this->message->time)->toKunena('config_post_dateformat_hover') ?>">
-						<?php echo KunenaDate::getInstance($this->message->time)->toKunena('config_post_dateformat') ?>
+						[ <?php echo KunenaDate::getInstance($this->message->time)->toKunena('config_post_dateformat') ?> ]
 					</span>
-					<span class="kmsg-id-left">
+					<span class="kmsg-id-right">
 						<a href="#<?php echo $this->message->id; ?>" id="<?php echo $this->message->id; ?>"
 						   rel="canonical">#<?php echo $this->numLink; ?></a>
 					</span>

@@ -125,7 +125,7 @@ if (!empty($this->spacing)) : ?>
 
 		<div class="visible-phone">
 			<?php echo JText::_('COM_KUNENA_GEN_LAST_POST')?>
-			<?php echo  $topic->getLastPostTime()->toKunena('config_post_dateformat'); ?> <br>
+			<?php echo $topic->getLastPostTime()->toKunena('config_post_dateformat'); ?>
 			<?php echo JText::_('COM_KUNENA_BY') . ' ' . $this->topic->getLastPostAuthor()->getLink(null, null, '', '', 'hasTooltip', $category->id);?>
 			<div class="pull-right">
 				<?php /** TODO: New Feature - LABELS

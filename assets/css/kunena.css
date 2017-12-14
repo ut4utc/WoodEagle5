@@ -7,6 +7,9 @@
     font-size: 0.917em;
     margin-top: 20px;
 }
+#kunena table {
+    margin-bottom: 0px;
+}
 
 /* Typography */
 
@@ -65,6 +68,10 @@
 }
 #kunena a:link, #kunena a:visited, #kunena a:active {
     color: #890916;
+}
+#kunena a.topictitle {
+    font-size: 1.25em;
+    font-weight: bold;
 }
 #kunena a:focus {
     outline: medium none;
@@ -274,7 +281,7 @@ div.close {
     float: right;
     height: 1px;
     position: relative;
-    right: 25px;
+    right: 14px;
     top: 5px;
 }
 #kunena .kcheckbox {
@@ -380,7 +387,7 @@ td.kcol-kcatlastpost {
     background-color: #fff;
 }
 
-/* Topic */
+/* Category's Topics */
 
 .kwhoicon {
     background: rgba(0, 0, 0, 0) url("/components/com_kunena/template/wood_eagle5/assets/img/buttons/who_is_online.png") no-repeat scroll center top;
@@ -401,17 +408,41 @@ div#kunena tbody {
     background: #fff none repeat scroll 0 0;
 }
 .klist-actions-goto {
-    height: 28px;
-    padding: 0 2px;
+    padding: 0;
+    margin: 0;
     vertical-align: middle;
     width: 1%;
+}
+.kbuttongoto span {
+    margin: 10px 0 0 15px;
+    padding: 0 17px;
 }
 span.kforumbottom {
     background: rgba(0, 0, 0, 0) url("/components/com_kunena/template/wood_eagle5/assets/img/icons/bottom_arrow.gif") no-repeat scroll left center;
     height: 15px;
     width: 18px;
 }
-
+.klist-actions-forum,
+.klist-pages-all {
+    padding: 0;
+    margin: 0;
+}
+ul.kpagination {
+    padding: 0 5px;
+    text-align: right;
+    background: #fff;
+}
+.kpagination li.page {
+    margin-right: 2px;
+}
+.kpagination li {
+    display: inline-block;
+}
+.kpagination span {
+    background-color: #595240;
+    color: #fff;
+    padding: 1px 5px;
+}
 #kunena.layout .btn {
     background-image: none;
     border: medium none;
@@ -445,22 +476,47 @@ td.klist-actions-forum a#btn_create.btn.btn-success {
     background-color: #595240;
 }
 
-#kunena td.kcol-ktopicreplies strong {
+td.kcol-ktopicreplies strong {
     display: block;
     font-size: 2.091em;
     font-weight: normal;
     line-height: 1.3;
     text-align: center;
 }
+.ktopic-views-number {
+    display: block;
+    font-size: 1.455em;
+    text-align: center;
+}
+.visible-phone {
+    display: none;
+}
 
+/* Topics */
 
-
-
-
-
-
-
-
+div#kunena div.kmsg-header h2 {
+    background-color: #eeeae3;
+}
+#kunena div.kmsg-header h2 {
+    font-size: 1em;
+    padding: 12px;
+}
+span.kmsg-id-right {
+    float: right;
+    margin: 0 10px 0 0;
+    padding: 0;
+}
+#kunena td.kprofile-left {
+    min-width: 170px;
+    vertical-align: top;
+    width: 170px;
+}
+ul.kpost-profile {
+    line-height: 1.5em;
+    margin: 8px 0;
+    padding: 0;
+    text-align: center;
+}
 
 
 
