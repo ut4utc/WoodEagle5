@@ -18,6 +18,7 @@ defined('_JEXEC') or die;
  */
 class KunenaTemplateWood_Eagle5 extends KunenaTemplate
 {
+	protected $default = array('crypsis');
 	/**
 	 * Template initialization.
 	 *

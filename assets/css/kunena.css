@@ -2,9 +2,7 @@
 * Main Kunena css file
 */
 
-#Kunena {
-    background: rgba(0, 0, 0, 0) url("../images/kunena/bg-46.jpg") no-repeat fixed center center / cover ;
-}
+#Kunena {}
 #ktop {
     border-color: #595240;
     border-image: none;
@@ -69,10 +67,49 @@ dl.tabs dt:hover {
 .k_guest + form > .input div {
     padding: 10px;
 }
-/* Link blocks = forgot pass, forgot login, register link */
 .klink-block > span {
     padding: 10px;
 }
+/* Kunena profile - pic, logout button */
+.kprofilebox-left {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 10px 0 0;
+}
+.kprofilebox-right {
+    float: right;
+    text-align: center;
+}
+.kprofileboxcnt {
+    display: inline-block;
+}
+.kprofileboxcnt #logout-form {
+    margin: 10px;
+}
+ul.kprofilebox-link li {
+    float: left;
+    padding-right: 10px;
+}
+ul.kprofilebox-welcome li form {
+    display: inline-block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
