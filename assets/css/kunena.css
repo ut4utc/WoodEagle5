@@ -12,7 +12,39 @@
 }
 
 /* Typography */
-
+#kunena.layout td.klist-jump-all input.kjumpgo,
+#kunena.layout #btn_report,
+#kunena.layout #kbbcode-toolbar li span,
+#kunena.layout ul#kbbcode-toolbar li a#kbbcode-smilies-button,
+#kunena.layout ul#kbbcode-toolbar li a#kbbcode-hr-button,
+#kunena.layout ul#kbbcode-toolbar li a#kbbcode-tweet-button,
+#kunena.layout .kmoderate-topicicons input[type="radio"],
+#kunena.layout .controls input[type="radio"],
+#kunena.layout input[type="checkbox"]:checked + label::before,
+#kunena.layout .label:empty, #kunena.layout .badge:empty {
+    display: none;
+}
+.hide {
+    display: none;
+}
+.fade {
+    opacity: 0;
+    transition: opacity 0.15s linear 0s;
+}
+#kunena.layout ul {
+    list-style-type: none;
+}
+#kunena.layout .fltrt,
+#kunena.layout ul.kprofilebox-link,
+#kunena.layout div.kmessage-buttons-cover,
+#kunena.layout div#searchuser_tbody div.userlist-jump,
+#kunena.layout div.krss-block,
+#kunena.layout .pull-right {
+    float: right;
+}
+.kbutton {
+    padding: 5px 15px!important;
+}
 #kunena .path-element-first a:link,
 #kunena .path-element-first a:visited {
     background: rgba(0, 0, 0, 0) none repeat scroll 0 center;
@@ -517,15 +549,65 @@ ul.kpost-profile {
     padding: 0;
     text-align: center;
 }
+.kmessage-editmarkup-cover {
+    border-bottom: 1px dotted #bfc3c6;
+    padding-top: 5px;
+    text-align: right;
+}
+.kmessage-informmarkup {
+    height: 16px;
+    margin-left: 3px;
+}
+.kmessage-left {
+    border: none;
+}
 
+/* Report container */
 
-
-
-
-
-
-
-
+#kreport-container {
+    background: #fff;
+    height: 1%;
+    overflow: auto;
+    padding: 20px;
+}
+#kunena.layout form.kform-report,
+#kunena.layout form.kform-report label,
+#kunena.layout form.kform-report input,
+#kunena.layout form.kform-report textarea {
+    clear: both;
+    float: left;
+}
+#kunena.layout form,
+#kunena.layout select,
+#kunena.layout textarea,
+#kunena.layout input {
+    height: auto;
+    margin: 0;
+    width: auto;
+}
+#kreport-container input.kbutton {
+    display: inline-block;
+    margin: 10px 0;
+    padding: 6px 8px;
+}
+#kunena.layout .nav-tabs li {
+    background-color: #f0f0f0;
+    border-left: 1px solid #bfc3c6;
+    border-right: 1px solid #bfc3c6;
+    border-top: 1px solid #bfc3c6;
+    color: #666;
+    float: left;
+    margin: 0;
+    padding: 4px 6px;
+}
+.nav-tabs::after, .nav-pills::after {
+    clear: both;
+}
+.nav-tabs::before, .nav-pills::before, .nav-tabs::after, .nav-pills::after {
+    content: "";
+    display: table;
+    line-height: 0;
+}
 
 
 
