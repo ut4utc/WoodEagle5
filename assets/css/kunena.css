@@ -609,8 +609,365 @@ ul.kpost-profile {
     line-height: 0;
 }
 
-
-
+/* Editor */
+.markItUpHeader {
+    margin: 0;
+    padding-bottom: 10px;
+    width: 100%;
+}
+textarea#kbbcode-message {
+    float: left;
+    width: 95%;
+}
+.markItUpEditor {
+    border: 1px solid #e5e5e5;
+    clear: both;
+    display: block;
+    line-height: 18px;
+    margin: 0;
+    overflow: auto;
+    padding: 5px;
+}
+#kunena.layout textarea, #kunena.layout textarea.kmedium {
+    font-size: 12px;
+    height: 10em;
+    width: 95%;
+}
+.markItUpButton {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 12px;
+    margin-bottom: 0;
+    padding-top: 4px;
+}
+.markItUpHeader ul li {
+    box-sizing: content-box;
+    float: left;
+    list-style: outside none none;
+    position: relative;
+}
+.markItUpHeader ul a {
+    background-repeat: no-repeat;
+    display: block;
+    height: 16px;
+    margin: 0;
+    padding: 4px;
+    text-indent: -10000px;
+    width: 16px;
+}
+#kunena.layout .markItUp .boldbutton a {
+    background-image: url("/components/com_kunena/template/wood_eagle5/assets/img/editor/bold.png");
+}
+#kunena.layout .markItUp .italicbutton a {
+    background-image: url("/components/com_kunena/template/wood_eagle5/assets/img/editor/italic.png");
+}
+#kunena.layout .markItUp .underlinebutton a {
+    background-image: url("/components/com_kunena/template/wood_eagle5/assets/img/editor/underline.png");
+}
+#kunena.layout .markItUp .strokebutton a {
+    background-image: url("/components/com_kunena/template/wood_eagle5/assets/img/editor/stroke.png");
+}
+#kunena.layout .markItUp .supscriptbutton a {
+    background-image: url("/components/com_kunena/template/wood_eagle5/assets/img/editor/supscript.png");
+}
+#kunena.layout .markItUp .subscriptbutton a {
+    background-image: url("/components/com_kunena/template/wood_eagle5/assets/img/editor/subscript.png");
+}
+#kunena.layout .markItUp .sizebutton a {
+    background-image: url("/components/com_kunena/template/wood_eagle5/assets/img/editor/fonts.png");
+}
+#kunena.layout .markItUp .colors a {
+    background-image: url("/components/com_kunena/template/wood_eagle5/assets/img/editor/colors.png");
+}
+#kunena.layout .markItUp .bulletedlistbutton a {
+    background-image: url("/components/com_kunena/template/wood_eagle5/assets/img/editor/list-bullet.png");
+}
+#kunena.layout .markItUp .numericlistbutton a {
+    background-image: url("/components/com_kunena/template/wood_eagle5/assets/img/editor/list-numeric.png");
+}
+#kunena.layout .markItUp .listitembutton a {
+    background-image: url("/components/com_kunena/template/wood_eagle5/assets/img/editor/list-item.png");
+}
+#kunena.layout .markItUp .alignleftbutton a {
+    background-image: url("/components/com_kunena/template/wood_eagle5/assets/img/editor/text_align_left.png");
+}
+#kunena.layout .markItUp .centerbutton a {
+    background-image: url("/components/com_kunena/template/wood_eagle5/assets/img/editor/text_align_center.png");
+}
+#kunena.layout .markItUp .alignrightbutton a {
+    background-image: url("/components/com_kunena/template/wood_eagle5/assets/img/editor/text_align_right.png");
+}
+#kunena.layout .markItUp .quotebutton a {
+    background-image: url("/components/com_kunena/template/wood_eagle5/assets/img/editor/quotes.png");
+}
+#kunena.layout .markItUp .codemodalboxbutton a, #kunena.layout .markItUp .codesimplebutton a {
+    background-image: url("/components/com_kunena/template/wood_eagle5/assets/img/editor/code.png");
+}
+#kunena.layout .markItUp .tablebutton a {
+    background-image: url("/components/com_kunena/template/wood_eagle5/assets/img/editor/table.png");
+}
+#kunena.layout .markItUp .spoilerbutton a {
+    background-image: url("/components/com_kunena/template/wood_eagle5/assets/img/editor/spoiler.png");
+}
+#kunena.layout .markItUp .hiddentextbutton a {
+    background-image: url("/components/com_kunena/template/wood_eagle5/assets/img/editor/hidden.png");
+}
+#kunena.layout .markItUp .picturebutton a {
+    background-image: url("/components/com_kunena/template/wood_eagle5/assets/img/editor/picture.png");
+}
+#kunena.layout .markItUp .linkbutton a {
+    background-image: url("/components/com_kunena/template/wood_eagle5/assets/img/editor/link.png");
+}
+#kunena.layout .markItUp .ebaybutton a {
+    background-image: url("/components/com_kunena/template/wood_eagle5/assets/img/editor/ebay.png");
+}
+#kunena.layout .markItUp .videodropdownbutton a {
+    background-image: url("/components/com_kunena/template/wood_eagle5/assets/img/editor/film.png");
+}
+#kunena.layout .markItUp .mapbutton a {
+    background-image: url("/components/com_kunena/template/wood_eagle5/assets/img/editor/map.png");
+}
+#kunena.layout .markItUp .pollbutton a {
+    background-image: url("/components/com_kunena/template/wood_eagle5/assets/img/editor/poll.png");
+}
+#kunena.layout .markItUp .tweetbutton a {
+    background-image: url("/components/com_kunena/template/wood_eagle5/assets/img/editor/tweet.png");
+}
+#kunena.layout .markItUp .soundcloudbutton a {
+    background-image: url("/components/com_kunena/template/wood_eagle5/assets/img/editor/soundcloud.png");
+    margin-left: -3px;
+    margin-top: 3px;
+}
+#kunena.layout .markItUp .instagrambutton a {
+    background-image: url("/components/com_kunena/template/wood_eagle5/assets/img/editor/instagram.png");
+}
+#kunena.layout .markItUp .hrbutton a {
+    background-image: url("/components/com_kunena/template/wood_eagle5/assets/img/editor/hr.png");
+}
+#kunena.layout .markItUp .emoticonsbutton a {
+    background-image: url("/components/com_kunena/template/wood_eagle5/assets/img/editor/emoticon.png");
+}
+#kunena.layout .markItUp .confidentialbutton a {
+    background-image: url("/components/com_kunena/template/wood_eagle5/assets/img/editor/confidential.png");
+}
+#kunena.layout .markItUp .clean a {
+    background-image: url("/components/com_kunena/template/wood_eagle5/assets/img/editor/clean.png");
+}
+#kunena.layout .markItUp .colors ul {
+    padding: 1px;
+    width: auto;
+}
+#kunena.layout .markItUp .colors li {
+    border: 1px solid white;
+    float: left;
+    height: 25px;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    width: 25px;
+}
+#kunena.layout .markItUp .colors ul a {
+    height: 25px;
+    width: 25px;
+}
+#kunena.layout .markItUp .colors .col1-1 a {
+    background: black;
+}
+#kunena.layout .markItUp .colors .col1-2 a {
+    background: orange;
+}
+#kunena.layout .markItUp .colors .col1-3 a {
+    background: red;
+}
+#kunena.layout .markItUp .colors .col2-1 a {
+    background: blue;
+}
+#kunena.layout .markItUp .colors .col2-2 a {
+    background: purple;
+}
+#kunena.layout .markItUp .colors .col2-3 a {
+    background: green;
+}
+#kunena.layout .markItUp .colors .col3-1 a {
+    background: white;
+}
+#kunena.layout .markItUp .colors .col3-2 a {
+    background: gray;
+}
+#kunena.layout .markItUp .colors .col3-3 a {
+    background: black;
+}
+markItUp {
+    width: 100%;
+}
+.markItUpContainer {
+    width: 100%;
+}
+.markItUpEditor {
+    border: 1px solid #e5e5e5;
+    clear: both;
+    display: block;
+    line-height: 18px;
+    margin: 0;
+    overflow: auto;
+    padding: 5px;
+}
+.markItUpPreviewFrame {
+    background-color: #ffffff;
+    height: 350px;
+    margin: 5px 0;
+    overflow: auto;
+    width: 99.9%;
+}
+.markItUpHeader {
+    height: 25px;
+    margin: 0;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    width: 100%;
+}
+.markItUpFooter {
+    height: 25px;
+    padding-bottom: 10px;
+    width: 100%;
+}
+.markItUpHeader ul li {
+    box-sizing: content-box;
+    float: left;
+    list-style: outside none none;
+    position: relative;
+}
+.markItUpHeader ul li:hover > ul {
+    display: block;
+}
+.markItUpHeader ul .markItUpDropMenu li {
+    margin-right: 0;
+}
+.markItUpHeader ul ul {
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid #e5e5e5;
+    display: none;
+    left: 0;
+    margin-top: 10px;
+    position: absolute;
+    top: 18px;
+}
+.markItUpHeader ul ul li {
+    border-bottom: 1px solid #e5e5e5;
+    float: none;
+}
+.markItUpHeader ul .markItUpSeparator {
+    border-left: 1px solid #ccc;
+    color: #ccc;
+    height: 24px;
+    margin-right: 5px;
+    overflow: hidden;
+    text-indent: -10000px;
+    width: 1px;
+}
+.markItUpHeader ul ul .markItUpSeparator {
+    height: 1px;
+    margin: 0;
+    width: auto;
+}
+.markItUpHeader ul ul ul {
+    left: 150px;
+    position: absolute;
+    top: -1px;
+}
+.markItUpHeader ul ul ul li {
+    float: none;
+}
+.markItUpHeader ul a {
+    background-repeat: no-repeat;
+    display: block;
+    height: 22px;
+    margin: 4px;
+    padding: 4px;
+    text-indent: -10000px;
+    width: 16px;
+}
+.markItUpHeader ul ul a {
+    background-position: 2px 50%;
+    display: block;
+    padding: 5px 5px 5px 25px;
+    text-indent: 0;
+    width: 150px;
+}
+.markItUpHeader ul ul a:hover {
+    background-color: #3875d7;
+    color: #fff;
+}
+.markItUpHeader ul {
+    margin: 0;
+    padding: 0;
+}
+.markItUpButton {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 12px;
+    margin-bottom: 0;
+    padding-top: 4px;
+}
+li.markItUpButton ul {
+    z-index: 1;
+}
+.dropzone .message {
+    filter: none;
+    opacity: 1;
+}
+.dropzone {
+    background: rgba(0, 0, 0, 0.03) none repeat scroll 0 0;
+    border: 1px solid rgba(0, 0, 0, 0.03);
+    border-radius: 3px;
+    min-height: 120px;
+    padding: 23px;
+}
+.dropzone .default.message {
+    background: rgba(0, 0, 0, 0) none no-repeat scroll 0 0;
+    filter: none;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out 0s;
+}
+#klabel_info_drop_browse {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+#files {
+    padding-bottom: 10px;
+}
+#files button.btn {
+    margin-right: 5px;
+}
+#files p {
+    margin: 15px 0 0;
+}
+#kbbcode-preview {
+    height: auto;
+    margin-bottom: 35px;
+}
+#iconset_inject .inline:hover {
+    cursor: pointer;
+}
+.kicon-reply {
+    background-image: url("/components/com_kunena/template/wood_eagle5/assets/img/icons/default.png");
+    background-position: 0 -460px;
+}
+.kicon-profile-minus {
+    background: rgba(0, 0, 0, 0) url("/components/com_kunena/template/wood_eagle5/assets/img/icons/default.png") no-repeat scroll 0 -294px;
+    display: inline-block;
+    height: 14px;
+    margin: -2px 0;
+    width: 14px;
+}
+.kicon-profile-plus {
+    background: rgba(0, 0, 0, 0) url("/components/com_kunena/template/wood_eagle5/assets/img/icons/default.png") no-repeat scroll 0 -313px;
+    display: inline-block;
+    height: 14px;
+    margin: -2px 0;
+    width: 14px;
+}
 
 
 
