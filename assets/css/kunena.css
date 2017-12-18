@@ -1,7 +1,8 @@
 /*
 * Main kunena css file
 */
-
+::-moz-selection { background: yellow; }
+::selection { background: yellow; }
 #kunena {
     position: relative;
     font-size: 0.917em;
@@ -590,14 +591,18 @@ ul.kpost-profile {
     margin: 10px 0;
     padding: 6px 8px;
 }
-#kunena.layout .nav-tabs li {
-    background-color: #f0f0f0;
-    border-left: 1px solid #bfc3c6;
-    border-right: 1px solid #bfc3c6;
-    border-top: 1px solid #bfc3c6;
-    color: #666;
+#kunena.layout .nav-tabs li a {
+    background-color: transparent;
+    color: #000;
     float: left;
-    margin: 0;
+    margin: 2px;
+    padding: 4px 6px;
+}
+#kunena.layout .nav-tabs li.active a {
+    background-color: #595240;
+    color: #fff;
+    float: left;
+    margin: 2px;
     padding: 4px 6px;
 }
 .nav-tabs::after, .nav-pills::after {
@@ -610,23 +615,15 @@ ul.kpost-profile {
 }
 
 /* Editor */
-.markItUpHeader {
-    margin: 0;
-    padding-bottom: 10px;
-    width: 100%;
+tr#kpost-toolbar td.kcol-editor-label {
+    width: 6%;
+}
+tr#kpost-toolbar td.kcol-editor-field {
+    width: 94%;
 }
 textarea#kbbcode-message {
     float: left;
     width: 95%;
-}
-.markItUpEditor {
-    border: 1px solid #e5e5e5;
-    clear: both;
-    display: block;
-    line-height: 18px;
-    margin: 0;
-    overflow: auto;
-    padding: 5px;
 }
 #kunena.layout textarea, #kunena.layout textarea.kmedium {
     font-size: 12px;
@@ -638,7 +635,6 @@ textarea#kbbcode-message {
     font-size: 14px;
     line-height: 12px;
     margin-bottom: 0;
-    padding-top: 4px;
 }
 .markItUpHeader ul li {
     box-sizing: content-box;
@@ -820,10 +816,6 @@ markItUp {
     width: 99.9%;
 }
 .markItUpHeader {
-    height: 25px;
-    margin: 0;
-    padding-bottom: 10px;
-    padding-left: 10px;
     width: 100%;
 }
 .markItUpFooter {
@@ -906,8 +898,8 @@ markItUp {
     display: inline-block;
     font-size: 14px;
     line-height: 12px;
-    margin-bottom: 0;
-    padding-top: 4px;
+    margin: 0;
+    padding: 0;
 }
 li.markItUpButton ul {
     z-index: 1;
@@ -968,9 +960,23 @@ li.markItUpButton ul {
     margin: -2px 0;
     width: 14px;
 }
+#kpost-toolbar blockquote {
+    background: #eee none repeat scroll 0 0;
+    border-left: 4px solid #eb9;
+    color: #000;
+    font-size: 13px;
+    line-height: 1.4em;
+    margin: 1em 2em 0.3em;
+    /*overflow: auto;*/
+    padding: 1.1em 1.4em;
+    text-align: center;
+}
+#kcol-editor-field {
 
-
-
+}
+#markItUpKbbcode-message {
+    transition: all 0.5s ease;
+}
 
 
 
