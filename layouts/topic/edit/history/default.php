@@ -39,14 +39,22 @@ $k = 0;
 					<tbody>
 					<tr>
 						<td rowspan="2" valign="top" class="kprofile-left  kauthor">
-							<p><?php echo $this->message->getAuthor()->getLink() ?></p>
-							<p><?php
-								$profile    = KunenaFactory::getUser(intval($this->message->userid));
-								$useravatar = $profile->getAvatarImage(KunenaFactory::getTemplate()->params->get('avatarType'), 'profile');
-								if ($useravatar) :
-									echo $this->message->getAuthor()->getLink($useravatar, null, '', '', null, $this->topic->getcategory()->id);
-								endif;
-								?></p>
+                            <ul class="kpost-profile">
+                                <li class="kpost-username">
+	                                <?php echo $this->message->getAuthor()->getLink() ?>
+                                </li>
+                                <li>
+                                    <span class="kavatar">
+                                        <?php
+                                        $profile    = KunenaFactory::getUser(intval($this->message->userid));
+                                        $useravatar = $profile->getAvatarImage(KunenaFactory::getTemplate()->params->get('avatarType'), 'profile');
+                                        if ($useravatar) :
+                                            echo $this->message->getAuthor()->getLink($useravatar, null, '', '', null, $this->topic->getcategory()->id);
+                                        endif;
+                                        ?>
+                                    </span>
+                                </li>
+                            </ul>
 						</td>
 						<td class="kmessage-left khistorymsg">
 							<div class="kmsgbody">

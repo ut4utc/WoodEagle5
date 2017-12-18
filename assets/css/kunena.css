@@ -43,6 +43,14 @@
 #kunena.layout .pull-right {
     float: right;
 }
+#kunena a img {
+    border: 0 none;
+}
+#kunena img {
+    height: auto;
+    max-width: none;
+    width: auto;
+}
 .kbutton {
     padding: 5px 15px!important;
 }
@@ -974,15 +982,27 @@ li.markItUpButton ul {
 #kcol-editor-field {
 
 }
-#markItUpKbbcode-message {
-    transition: all 0.5s ease;
+#kunena tr.ksth {
+    border-color: #d4ccc0;
 }
-
-
-
-
-
-
+#kunena tr.ksth th {
+    background-color: #d4ccc0;
+    padding: 3px 5px;
+}
+#kunena .kprofile-left {
+    border-color: #d4ccc0;
+}
+#kunena .kprofile-left {
+    background-color: #f8f4ed;
+}
+#khistory span.khistory-msgdate {
+    float: left;
+    padding-left: 10px;
+}
+#khistory tr.ksth a {
+    float: right;
+    padding-right: 10px;
+}
 
 
 
