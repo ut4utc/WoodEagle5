@@ -52,7 +52,9 @@
     width: auto;
 }
 .kbutton {
-    padding: 5px 15px!important;
+    padding: 5px 15px !important;
+    background-color: #f8f4ed;
+    border: 1px solid #d4ccc0;
 }
 #kunena .path-element-first a:link,
 #kunena .path-element-first a:visited {
