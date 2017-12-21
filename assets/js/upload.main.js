@@ -179,7 +179,7 @@ jQuery(function ($) {
 	var removeButton = $('<button/>')
 		.addClass('btn btn-danger')
 		.attr('type', 'button')
-		.html('<i class="icon-trash"></i> ' + Joomla.JText._('COM_KUNENA_GEN_REMOVE_FILE'))
+		.html('<i class="fa fa-trash"></i> ' + Joomla.JText._('COM_KUNENA_GEN_REMOVE_FILE'))
 		.on('click', function () {
 			var $this = $(this),
 				data = $this.data();

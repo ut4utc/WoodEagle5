@@ -28,10 +28,10 @@
 .hide {
     display: none;
 }
-.fade {
+/*.fade {
     opacity: 0;
     transition: opacity 0.15s linear 0s;
-}
+}*/
 #kunena.layout ul {
     list-style-type: none;
 }
@@ -216,7 +216,7 @@ dl.tabs dt:hover {
 }
 #kprofilebox input[type="text"],
 #kprofilebox input[type="password"] {
-    border: 1px solid #bbb;
+    border: 1px solid #d4ccc0;
     height: auto;
     line-height: normal;
     padding: 4px;
@@ -316,6 +316,10 @@ div.close {
     font-family: Arial;
     font-size: 17px;
     padding: 10px;
+
+}
+.ktitle-desc {
+    padding: 0 10px 10px;
 }
 .kheader h1 a {
     margin: 0 8px;
@@ -351,11 +355,14 @@ tr.krow2 td {
 td.kcol-category-icon {
     width: 1%;
 }
-td.kcol-mid {
+.kcol-mid {
     border-bottom: 1px solid #d4ccc0;
     border-left: 1px solid #d4ccc0;
-    padding: 4px 8px;
+    padding: 15px;
     vertical-align: middle;
+}
+.modal-footer{
+    margin: 20px 0 0;
 }
 td.kmycount,
 td.kcol-kcattopics,
@@ -486,37 +493,63 @@ ul.kpagination {
     color: #fff;
     padding: 1px 5px;
 }
-#kunena.layout .btn {
-    background-image: none;
-    border: medium none;
-    border-radius: 0;
-    box-shadow: none;
-    color: #333;
+
+/* kunena buttons */
+
+#kunena .btn,
+#kunena button,
+#kunena .button,
+#kunena .kbutton {
+    background-color: #595240;
+    border-radius: 2px;
+    color: #fff!important;
     cursor: pointer;
-    display: inline-block;
-    font-size: 13px;
-    line-height: 18px;
-    margin-bottom: 0;
+    display: inline;
+    font-size: 1em;
+    font-weight: normal;
     padding: 4px 12px;
     text-align: center;
-    text-shadow: none;
-    vertical-align: middle;
+    text-transform: unset!important;
 }
-#kunena.layout #btn_thankyou,
-#kunena.layout #btn_unthankyou,
-#kunena.layout #btn_list,
-#kunena.layout .btn.btn-primary,
-#kunena.layout .klist-actions .btn,
-#kunena.layout .kmessage-left .btn,
-#kunena.layout #topic-actions .btn,
-#kunena.layout .kmessage-buttons-row .btn {
-    background-color: #737373;
-    color: #fff;
-    margin: 5px 0;
+#kunena .btn:hover,
+#kunena button:hover,
+#kunena .button:hover,
+#kunena .kbutton:hover {
+    background-color: #78756f;
+}
+a.btn {
+
+}
+.kmessage-buttons-row{
+    margin: 10px 0;
+}
+#kunena .btn.btn-link {
+    background: none;
+}
+#kunena select {
+    background: #fff!important;
+    color: #000!important;
+}
+select, textarea,
+input[type="text"],
+input[type="password"],
+input[type="url"],
+input[type="email"] {
+    line-height: normal!important;
+    padding: 2px 12px!important;
+}
+#btn_reply {
+    margin-left: 3px;
 }
 
 td.klist-actions-forum a#btn_create.btn.btn-success {
     background-color: #595240;
+}
+.kmessage-buttons-cover {
+    margin: 10px 0;
+}
+.kpost-thankyou, .kpost-unthankyou {
+    margin: 20px 0;
 }
 
 td.kcol-ktopicreplies strong {
@@ -596,6 +629,11 @@ ul.kpost-profile {
     margin: 0;
     width: auto;
 }
+#kunena input::placeholder,
+#kunena textarea::placeholder {
+    color: #777;
+    text-transform: none;
+}
 #kreport-container input.kbutton {
     display: inline-block;
     margin: 10px 0;
@@ -636,8 +674,10 @@ textarea#kbbcode-message {
     width: 95%;
 }
 #kunena.layout textarea, #kunena.layout textarea.kmedium {
-    font-size: 12px;
-    height: 10em;
+    font-size: 14px;
+    line-height: 1.75;
+    padding: 10px 0 0 10px;
+    margin: 10px 0;
     width: 95%;
 }
 .markItUpButton {
@@ -741,8 +781,6 @@ textarea#kbbcode-message {
 }
 #kunena.layout .markItUp .soundcloudbutton a {
     background-image: url("/components/com_kunena/template/wood_eagle5/assets/img/editor/soundcloud.png");
-    margin-left: -3px;
-    margin-top: 3px;
 }
 #kunena.layout .markItUp .instagrambutton a {
     background-image: url("/components/com_kunena/template/wood_eagle5/assets/img/editor/instagram.png");
@@ -807,6 +845,7 @@ markItUp {
     width: 100%;
 }
 .markItUpContainer {
+    margin: 8px 0;
     width: 100%;
 }
 .markItUpEditor {
@@ -859,8 +898,8 @@ markItUp {
     float: none;
 }
 .markItUpHeader ul .markItUpSeparator {
-    border-left: 1px solid #ccc;
-    color: #ccc;
+    border-left: 1px solid #d4ccc0;
+    color: #d4ccc0;
     height: 24px;
     margin-right: 5px;
     overflow: hidden;
@@ -892,13 +931,14 @@ markItUp {
 .markItUpHeader ul ul a {
     background-position: 2px 50%;
     display: block;
+    color: #000!important;
     padding: 5px 5px 5px 25px;
     text-indent: 0;
     width: 150px;
 }
 .markItUpHeader ul ul a:hover {
-    background-color: #3875d7;
-    color: #fff;
+    background-color: #d4ccc0;
+    color: #fff!important;
 }
 .markItUpHeader ul {
     margin: 0;
@@ -945,9 +985,25 @@ li.markItUpButton ul {
 #files p {
     margin: 15px 0 0;
 }
+.modal-link-url {
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid #eee;
+    color: #000;
+    font-size: 14px;
+    height: 45px;
+    line-height: 1.7;
+    max-width: 100%;
+    padding: 10px 20px;
+}
+.markItUpKbbcode-message{
+    border: 1px solid #eee;
+}
 #kbbcode-preview {
-    height: auto;
-    margin-bottom: 35px;
+    border: 1px solid #eee;
+    font-size: 1.2em;
+    height: auto!important;
+    margin: -2px 0;
+    padding: 14px;
 }
 #iconset_inject .inline:hover {
     cursor: pointer;
