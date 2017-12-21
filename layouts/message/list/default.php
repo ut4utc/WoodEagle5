@@ -19,18 +19,16 @@ $kcount  = 0;
 
 ?>
 <?php if ($view != 'user') : ?>
-<div class="row-fluid">
-	<div class="span12">
-		<div class="pull-left">
-			<h1>
-				<?php echo $this->escape($this->headerText); ?>
-				<small class="hidden-sm">
-					(<?php echo JText::sprintf('COM_KUNENA_X_MESSAGES_MORE', $this->formatLargeNumber($this->pagination->total)); ?>)
-				</small>
+<div class="kblock">
+	<div class="kheader">
+        <h1>
+            <?php echo $this->escape($this->headerText); ?>
+            <small class="hidden-sm">
+                (<?php echo JText::sprintf('COM_KUNENA_X_MESSAGES_MORE', $this->formatLargeNumber($this->pagination->total)); ?>)
+            </small>
 
-				<?php // ToDo:: <span class="badge badge-success"> <?php echo $this->topics->count->unread; ?/></span> ?>
-			</h1>
-		</div>
+            <?php // ToDo:: <span class="badge badge-success"> <?php echo $this->topics->count->unread; ?/></span> ?>
+        </h1>
 
 		<h2 class="filter-time pull-right">
 			<div class="filter-sel">

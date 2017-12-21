@@ -15,13 +15,13 @@ $tabs = $this->getTabs();
 
 <div class="kblock k-profile">
 	<div class="kheader">
-		<h2><span class="k-name"><?php echo JText::_('COM_KUNENA_USER_PROFILE'); ?> <?php echo $this->profile->getLink();?></span>
-			<?php if ($this->profile->isAuthorised('edit') || $this->me->isAdmin()) : ?>
-				<?php echo $this->profile->getLink(
-					KunenaIcons::edit() . ' ' . JText::_('COM_KUNENA_EDIT'),
-					JText::_('COM_KUNENA_EDIT'), 'nofollow', 'edit', 'btn pull-right'
-				); ?>
-			<?php endif; ?></h2>
+		<h2><span class="k-name"><?php echo JText::_('COM_KUNENA_USER_PROFILE'); ?> <?php echo $this->profile->getLink();?></span></h2>
+		<?php if ($this->profile->isAuthorised('edit') || $this->me->isAdmin()) : ?>
+			<?php echo $this->profile->getLink(
+				KunenaIcons::edit() . ' ' . JText::_('COM_KUNENA_EDIT'),
+				JText::_('COM_KUNENA_EDIT'), 'nofollow', 'edit', 'btn pull-right kprofileedit'
+			); ?>
+		<?php endif; ?>
 	</div>
 	<div class="kcontainer">
 		<div class="kbody">

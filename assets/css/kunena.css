@@ -13,7 +13,7 @@
 }
 
 /* Typography */
-#kunena.layout td.klist-jump-all input.kjumpgo,
+/*#kunena.layout td.klist-jump-all input.kjumpgo,
 #kunena.layout #btn_report,
 #kunena.layout #kbbcode-toolbar li span,
 #kunena.layout ul#kbbcode-toolbar li a#kbbcode-smilies-button,
@@ -24,6 +24,12 @@
 #kunena.layout input[type="checkbox"]:checked + label::before,
 #kunena.layout .label:empty, #kunena.layout .badge:empty {
     display: none;
+}*/
+#kunena.layout .controls input[type="radio"]:checked + label,
+#kunena.layout .kmoderate-topicicons input[type="radio"]:checked + label {
+    background: rgba(0, 0, 0, 0.07) none repeat scroll 0 0;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
 }
 .hide {
     display: none;
@@ -105,6 +111,12 @@
 }
 #kunena .kheader h2, #kunena div.ktitle-desc, #kunena .kheader h2 a:link, #kunena .kheader h2 a:visited, #kunena .kheader h2 a:active, #kunena .kheader h2 a:focus {
     color: #595240;
+}
+.k-profile h2 > a {
+    color: #fff!important;
+}
+.kprofile-stats a.btn {
+    background: #fff!important;
 }
 #kunena .kheader h2 a:focus {
     outline: medium none;
@@ -228,6 +240,34 @@ dl.tabs dt:hover {
     padding: 10px;
 }
 /* kunena profile - pic, logout button */
+a#btn_reply,
+a#btn_unsubscribe,
+a#btn_favorite,
+a#btn_delete,
+a#btn_moderate,
+a#btn_sticky,
+a#btn_unsticky,
+a#btn_lock,
+a#btn_unthankyou,
+a#btn_thankyou,
+a#btn_quote,
+a#btn_edit,
+a#btn_create,
+a#btn_markread,
+a#btn_subscribe,
+a#btn_report,
+a.btn-primary {
+    color: #fff!important;
+}
+a#btn_report {
+    margin: 0 0 0 10px;
+    padding: 0 7px 1px!important;
+}
+.kcontenttablespacer td {
+    background: #eee;
+    border: 1px solid #d4ccc0;
+}
+
 .kprofilebox-left {
     display: inline-block;
     vertical-align: top;
@@ -287,11 +327,8 @@ ul.kprofilebox-welcome li form {
     overflow: hidden;
     padding: 0;
 }
-.klist-markallcatsread input.kbutton {
-    font-size: 12px;
-    font-weight: 700;
-    margin: 6px 15px;
-    padding: 6px;
+.klist-markallcatsread {
+    padding: 10px 0 10px 15px;
 }
 .klist-markallcatsread select#catid {
     height: auto;
@@ -315,7 +352,7 @@ div.close {
 .kheader h1, .kheader h2 {
     font-family: Arial;
     font-size: 17px;
-    padding: 10px;
+    padding: 20px;
 
 }
 .ktitle-desc {
@@ -376,7 +413,8 @@ td.kcol-ktopicviews {
 }
 td.kcol-first {
     border: 1px solid #d4ccc0;
-    vertical-align: middle;
+    vertical-align: top;
+    text-align: center;
     white-space: nowrap;
 }
 span.kicon {
@@ -502,7 +540,7 @@ ul.kpagination {
 #kunena .kbutton {
     background-color: #595240;
     border-radius: 2px;
-    color: #fff!important;
+    color: #fff;
     cursor: pointer;
     display: inline;
     font-size: 1em;
@@ -1062,9 +1100,23 @@ li.markItUpButton ul {
     padding-right: 10px;
 }
 
-
-
-
+/* Profile */
+.k-profile h2 {
+    display: inline-block;
+}
+.k-profile + a.pull-right {
+    padding: 3px 0;
+}
+#kuserform {
+    background-color: #fff;
+}
+.khelprulescontent {
+    padding: 20px;
+}
+div.alert a.alert-link {
+    background-color: #eb9;
+    padding: 2px 15px;
+}
 
 
 
