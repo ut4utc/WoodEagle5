@@ -589,6 +589,9 @@ td.klist-actions-forum a#btn_create.btn.btn-success {
 .kpost-thankyou, .kpost-unthankyou {
     margin: 20px 0;
 }
+.kmessage-thankyou {
+    vertical-align: bottom;
+}
 
 td.kcol-ktopicreplies strong {
     display: block;
