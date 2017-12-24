@@ -47,7 +47,7 @@ $this->addScriptDeclaration("kform = '#kreply".$this->message->id."_form';");
 	<div class="kmessage-buttons-row">
 		<?php if (empty($this->message_closed)) : ?>
 			<?php if($this->quickreply && $quick != 2) : ?>
-				<a data-related="kreply<?php echo $this->message->displayField('id'); ?>_form" role="button" class="btn btn-default Kreplyclick"
+				<a data-related="kreply<?php echo $this->message->displayField('id'); ?>_form" role="button" class="btn btn-default kreplyclick"
 				   rel="nofollow"><?php echo KunenaIcons::undo() . ' ' . JText::_('COM_KUNENA_MESSAGE_ACTIONS_LABEL_QUICK_REPLY'); ?>
 				</a>
 			<?php endif; ?>

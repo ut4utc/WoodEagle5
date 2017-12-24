@@ -548,6 +548,7 @@ ul.kpagination {
     padding: 4px 12px;
     text-align: center;
     text-transform: unset!important;
+    white-space: nowrap;
 }
 #kunena .btn:hover,
 #kunena button:hover,
@@ -559,6 +560,7 @@ a.btn {
 
 }
 .kmessage-buttons-row{
+    line-height: 2.2;
     margin: 10px 0;
 }
 #kunena .btn.btn-link {
@@ -1104,6 +1106,11 @@ li.markItUpButton ul {
 }
 
 /* Profile */
+.kwho-admin {
+    color: red;
+    display: block;
+    overflow: hidden;
+}
 .k-profile h2 {
     display: inline-block;
 }
@@ -1117,7 +1124,8 @@ li.markItUpButton ul {
     padding: 20px;
 }
 div.alert a.alert-link {
-    background-color: #eb9;
+    background-color: #444;
+    color: #fff!important;
     padding: 2px 15px;
 }
 

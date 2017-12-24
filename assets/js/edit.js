@@ -108,7 +108,7 @@ jQuery(document).ready(function ($) {
 		}
 	});
 
-	$('.Kreplyclick').click(function () {
+	$('.kreplyclick').click(function () {
 		var name = '#' + $(this).attr('data-related');
 		if ($(name).is(":visible")) {
 			$(name).hide();
