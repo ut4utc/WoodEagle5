@@ -38,6 +38,15 @@
     opacity: 0;
     transition: opacity 0.15s linear 0s;
 }*/
+.collapse {
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    transition: height .35s ease;
+}
+.collapse.in {
+    height: auto;
+}
 #kunena.layout ul {
     list-style-type: none;
 }
@@ -264,7 +273,7 @@ a#btn_report {
     padding: 0 7px 1px!important;
 }
 .kcontenttablespacer td {
-    background: #eee;
+    background: #f8f4ed;
     border: 1px solid #d4ccc0;
 }
 
@@ -334,26 +343,28 @@ ul.kprofilebox-welcome li form {
     height: auto;
     margin: 4px;
 }
+
 /* Forum */
-span.ktoggler a.close {
+
+div.kheader div.close {
+    background-color: #F8F4ED;
+    color: #b7b7b7;
+    float: right;
+    font-size: 20px;
+    cursor: pointer;
+    line-height: 20px;
+    padding: 20px;
+    text-shadow: 0 1px 0 #fff;
+}
+div.header div.close:before {
     background: rgba(0, 0, 0, 0) url("/components/com_kunena/template/wood_eagle5/assets/img/icons/shrink-white.png") no-repeat scroll center center;
     height: 16px;
     width: 16px;
-}
-div.close {
-    color: #000;
-    float: right;
-    font-size: 20px;
-    font-weight: bold;
-    line-height: 20px;
-    opacity: 0.2;
-    text-shadow: 0 1px 0 #fff;
 }
 .kheader h1, .kheader h2 {
     font-family: Arial;
     font-size: 17px;
     padding: 20px;
-
 }
 .ktitle-desc {
     padding: 0 10px 10px;
@@ -413,7 +424,7 @@ td.kcol-ktopicviews {
 }
 td.kcol-first {
     border: 1px solid #d4ccc0;
-    vertical-align: top;
+    vertical-align: middle;
     text-align: center;
     white-space: nowrap;
 }
