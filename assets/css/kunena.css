@@ -62,9 +62,9 @@
     border: 0 none;
 }
 #kunena img {
-    height: auto;
+    /*height: auto;
     max-width: none;
-    width: auto;
+    width: auto;*/
 }
 .kbutton {
     padding: 5px 15px !important;
@@ -126,6 +126,17 @@
 }
 .kprofile-stats a.btn {
     background: #fff!important;
+}
+#kunena .kicon-profile {
+    background: rgba(0, 0, 0, 0) url("/components/com_kunena/template/wood_eagle5/assets/img/buttons/default.png") no-repeat scroll 0 0;
+    display: inline-block;
+    height: 16px;
+    margin-right: 3px;
+    vertical-align: text-top;
+    width: 16px;
+}
+a.kicon-profile-gender-male {
+    background-position: 0 -374px;
 }
 #kunena .kheader h2 a:focus {
     outline: medium none;
@@ -580,9 +591,6 @@ ul.kpagination {
 #kunena .kbutton:hover {
     background-color: #78756f;
 }
-a.btn {
-
-}
 .kmessage-buttons-row{
     line-height: 2.2;
     margin: 10px 0;
@@ -617,6 +625,7 @@ td.klist-actions-forum a#btn_create.btn.btn-success {
 }
 .kmessage-thankyou {
     vertical-align: bottom;
+    clear: both;
 }
 
 td.kcol-ktopicreplies strong {
@@ -669,8 +678,12 @@ ul.kpost-profile {
     height: 16px;
     margin-left: 3px;
 }
+.kmsgbody {
+    display: block;
+}
 .kmessage-left {
     border: none;
+    display: block;
 }
 
 /* Report container */
@@ -1161,10 +1174,170 @@ div.alert a.alert-link {
 .kmoderate ul.dl-horizontal {
     margin: 20px;
 }
+div.kmsgimage a img {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+    height: 100%;
+    width: 100%;
+}
+a.fancybox-button {
+}
+ul.kfile-attach {
+    position: relative;
+}
+ ul.kfile-attach li {
+    background: rgba(0, 0, 0, 0) url("/components/com_kunena/template/wood_eagle5/assets/img/buttons/attachment.png") no-repeat scroll 0 0;  display: inline-block;
+    height: 32px;
+    line-height: 32px;
+    list-style-type: none;
+    margin-top: 10px;
+    padding-left: 30px;
+    width: auto;
+}
+ul.kfile-attach-editing li a img {
+    margin-left: 10px;
+    max-height: 32px;
+    max-width: 32px;
+}
+div#kunena ul.kfile-attach li a img, div#kunena ul.kfile-attach-editing li a img {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    height: 80px;
+    max-width: 100%;
+    min-height: 60px;
+    min-width: 80px;
+    padding: 4px;
+    width: 80px;
+}
+.kmsgattach {
+    display: block;
+}
+.kmsgimage {
+    width: 50%;
+}
+.kmsgtext blockquote {
+    margin: auto;
+}
 
-
-
-
+/* Popover */
+a.popoverinfo {
+    background-color: #e3e3e3;
+    border-radius: 2px;
+    left: -24px;
+    margin: 0 9px;
+    padding: 5px 5px 6px 12px;
+    position: relative;
+    vertical-align: text-bottom;
+}
+.popover {
+    background-clip: padding-box;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    display: none;
+    left: 0;
+    max-width: 276px;
+    padding: 1px;
+    position: absolute;
+    text-align: left;
+    top: 0;
+    white-space: normal;
+    z-index: 1010;
+}
+.popover.top {
+    margin-top: -10px;
+}
+.popover.right {
+    margin-left: 10px;
+}
+.popover.bottom {
+    margin-top: 10px;
+}
+.popover.left {
+    margin-left: -10px;
+}
+.popover-title {
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #ebebeb;
+    border-radius: 5px 5px 0 0;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 18px;
+    margin: 0;
+    padding: 8px 14px;
+}
+.popover-title:empty {
+    display: none;
+}
+.popover-content {
+    padding: 9px 14px;
+}
+.popover .arrow, .popover .arrow::after {
+    border-color: transparent;
+    border-style: solid;
+    display: block;
+    height: 0;
+    position: absolute;
+    width: 0;
+}
+.popover .arrow {
+    border-width: 11px;
+}
+.popover .arrow::after {
+    border-width: 10px;
+    content: "";
+}
+.popover.top .arrow {
+    border-bottom-width: 0;
+    border-top-color: rgba(0, 0, 0, 0.25);
+    bottom: -11px;
+    left: 50%;
+    margin-left: -11px;
+}
+.popover.top .arrow::after {
+    border-bottom-width: 0;
+    border-top-color: #fff;
+    bottom: 1px;
+    margin-left: -10px;
+}
+.popover.right .arrow {
+    border-left-width: 0;
+    border-right-color: rgba(0, 0, 0, 0.25);
+    left: -11px;
+    margin-top: -11px;
+    top: 50%;
+}
+.popover.right .arrow::after {
+    border-left-width: 0;
+    border-right-color: #fff;
+    bottom: -10px;
+    left: 1px;
+}
+.popover.bottom .arrow {
+    border-bottom-color: rgba(0, 0, 0, 0.25);
+    border-top-width: 0;
+    left: 50%;
+    margin-left: -11px;
+    top: -11px;
+}
+.popover.bottom .arrow::after {
+    border-bottom-color: #fff;
+    border-top-width: 0;
+    margin-left: -10px;
+    top: 1px;
+}
+.popover.left .arrow {
+    border-left-color: rgba(0, 0, 0, 0.25);
+    border-right-width: 0;
+    margin-top: -11px;
+    right: -11px;
+    top: 50%;
+}
+.popover.left .arrow::after {
+    border-left-color: #fff;
+    border-right-width: 0;
+    bottom: -10px;
+    right: 1px;
+}
 
 
 
