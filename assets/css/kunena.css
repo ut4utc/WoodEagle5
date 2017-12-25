@@ -432,6 +432,9 @@ td.kcol-first {
     text-align: center;
     white-space: nowrap;
 }
+.k-profile td.kcol-first {
+    vertical-align: top;
+}
 span.kicon {
     background: rgba(0, 0, 0, 0) none repeat scroll 0 center;
     border: 0 none;
@@ -1130,7 +1133,6 @@ li.markItUpButton ul {
 /* Profile */
 .kwho-admin {
     color: red;
-    display: block;
     overflow: hidden;
 }
 .k-profile h2 {
