@@ -265,7 +265,8 @@ a#btn_create,
 a#btn_markread,
 a#btn_subscribe,
 a#btn_report,
-a.btn-primary {
+a.btn-primary,
+.control-group a.kbutton {
     color: #fff!important;
 }
 a#btn_report {
@@ -277,6 +278,9 @@ a#btn_report {
     border: 1px solid #d4ccc0;
 }
 
+.dl-horizontal dt, .dl-horizontal dd {
+    display: inline-block;
+}
 .kprofilebox-left {
     display: inline-block;
     vertical-align: top;
@@ -539,8 +543,14 @@ ul.kpagination {
 }
 .kpagination span {
     background-color: #595240;
+    border-radius: 2px;
     color: #fff;
-    padding: 1px 5px;
+    margin: 6px;
+    padding: 2px 7px;
+}
+.pagination ul li a,
+.pagination ul li span {
+    background: #f8f4ed;
 }
 
 /* kunena buttons */
@@ -695,6 +705,7 @@ ul.kpost-profile {
 }
 #kunena.layout .nav-tabs li a {
     background-color: transparent;
+    border-radius: 2px;
     color: #000;
     float: left;
     margin: 2px;
@@ -1139,8 +1150,15 @@ div.alert a.alert-link {
     color: #fff!important;
     padding: 2px 15px;
 }
-
-
+.kmoderate {
+    background-color: #fff;
+}
+.kmoderate .kcontainer {
+    padding: 20px;
+}
+.kmoderate ul.dl-horizontal {
+    margin: 20px;
+}
 
 
 
