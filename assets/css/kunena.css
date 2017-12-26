@@ -276,6 +276,7 @@ a#btn_create,
 a#btn_markread,
 a#btn_subscribe,
 a#btn_report,
+a#btn_approve,
 a.btn-primary,
 .control-group a.kbutton {
     color: #fff!important;
@@ -288,7 +289,9 @@ a#btn_report {
     background: #f8f4ed;
     border: 1px solid #d4ccc0;
 }
-
+.ksearchresult-desc {
+    padding: 20px;
+}
 .dl-horizontal dt, .dl-horizontal dd {
     display: inline-block;
 }
@@ -457,6 +460,11 @@ span.knotloginforum,
 span.kreadforum {
     background: rgba(0, 0, 0, 0) url("/components/com_kunena/template/wood_eagle5/assets/img/buttons/folder_nonew.png") no-repeat scroll left center;
 }
+#kunena.layout span.kunreadforum {
+    background: rgba(0, 0, 0, 0) url("/components/com_kunena/template/wood_eagle5/assets/img/buttons/folder.png") no-repeat scroll left center;
+    height: 32px;
+    width: 32px;
+}
 span.kreadforum,
 span.knotloginforum {
     background: rgba(0, 0, 0, 0) url("/components/com_kunena/template/wood_eagle5/assets/img/buttons/folder_nonew.png") no-repeat scroll left center;
@@ -524,6 +532,9 @@ div#kunena table.kblocktable,
 div#kunena tbody {
     background: #fff none repeat scroll 0 0;
 }
+#kforum-head {
+    padding: 20px 0 5px 20px;
+}
 .klist-actions-goto {
     padding: 0;
     margin: 0;
@@ -581,6 +592,7 @@ ul.kpagination {
     font-size: 1em;
     font-weight: normal;
     padding: 4px 12px;
+    margin: 0;
     text-align: center;
     text-transform: unset!important;
     white-space: nowrap;
@@ -590,6 +602,9 @@ ul.kpagination {
 #kunena .button:hover,
 #kunena .kbutton:hover {
     background-color: #78756f;
+}
+a.kreplyclick {
+    margin-right: 3px!important;
 }
 .kmessage-buttons-row{
     line-height: 2.2;
@@ -684,6 +699,9 @@ ul.kpost-profile {
 .kmessage-left {
     border: none;
     display: block;
+}
+.resultmsg div.kmsgtitle.kresult-title span.kmsgtitle a.hasTooltip {
+    font-size: x-large;
 }
 
 /* Report container */
