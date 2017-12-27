@@ -114,3 +114,4 @@ $attachments = $this->attachments;
 		<input class="btn pull-right" type="submit" value="<?php echo JText::_('COM_KUNENA_FILES_DELETE'); ?>" />
 	<?php endif; ?>
 </form>
+<div class="clearfix"></div>
