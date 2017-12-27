@@ -404,7 +404,9 @@ dl.tabs dt:hover {
 .klink-block > span {
     padding: 10px;
 }
+
 /* kunena profile - pic, logout button */
+
 a#btn_reply,
 a#btn_unsubscribe,
 a#btn_favorite,
@@ -464,7 +466,13 @@ ul.kprofilebox-link li {
 ul.kprofilebox-welcome li form {
     display: inline-block;
 }
+#banhistory {
+    display: block;
+    margin: 1em 0;
+}
+
 /* Breadcrumbs */
+
 .kforum-pathway {
     background-color: #f8f4ed;
     border: 1px solid #d4ccc0;
