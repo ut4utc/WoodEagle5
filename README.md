@@ -1,4 +1,4 @@
-# WoodEagle5 - FREE Kunena 5 Theme from Aleks Snitko
+# WoodEagle5 - FREE Kunena 5 Theme
 
 
 ### ABOUT
