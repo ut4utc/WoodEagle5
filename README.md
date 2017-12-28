@@ -1,8 +1,7 @@
 # WoodEagle5 - FREE Kunena 5 Theme from Aleks Snitko
-___
 
 
-###ABOUT
+### ABOUT
 
 Kunena is a native Joomla forum and communications component written in PHP. Kunena enables forums, bulletin board, support forums, discussions and comments for a Jooomla base website.
 
