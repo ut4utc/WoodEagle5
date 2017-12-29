@@ -28,16 +28,16 @@ class KunenaTemplateWood_Eagle5 extends KunenaTemplate
 	{
 		KunenaTemplate::getInstance()->loadLanguage();
 
+        // TODO-alex make checkbox in a theme where chose using bootstrap
+		
 		// Template requires Bootstrap javascript
 		// JHtml::_('bootstrap.framework');
 
-        // TODO-alex make checkbox in a theme where chose using bootstrap
-
 		// Template also requires jQuery framework.
-	//	JHtml::_('jquery.framework');
-	//	JHtml::_('stylesheet', 'media/jui/css/bootstrap.min.css');
-	//	JHtml::_('stylesheet', 'media/jui/css/bootstrap-responsive.min.css');
-	//	JHtml::_('stylesheet', 'media/jui/css/bootstrap-extended.css');
+		//	JHtml::_('jquery.framework');
+		//	JHtml::_('stylesheet', 'media/jui/css/bootstrap.min.css');
+		//	JHtml::_('stylesheet', 'media/jui/css/bootstrap-responsive.min.css');
+		//	JHtml::_('stylesheet', 'media/jui/css/bootstrap-extended.css');
 
 		// Load JavaScript.
 		$this->addScript('assets/js/main.js');
