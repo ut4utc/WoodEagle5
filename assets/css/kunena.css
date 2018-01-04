@@ -1522,7 +1522,8 @@ a.popoverinfo {
     .klist-markallcatsread div.fltrt{
         float: none!important;
     }
-    #gkMainbody table#kflattable {
+    #gkMainbody table#kflattable,
+    #kunena table.kblocktable {
         width: 100%!important;
     }
 
