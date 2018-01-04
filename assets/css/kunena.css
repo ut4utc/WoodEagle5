@@ -1518,15 +1518,23 @@ a.popoverinfo {
 
 /* Fix */
 
-@media screen and (min-width: 300px) and (max-width: 400px)  {
+@media screen and (min-width: 300px) and (max-width: 450px)  {
     .klist-markallcatsread div.fltrt{
         float: none!important;
     }
     #gkMainbody table#kflattable,
-    #kunena table.kblocktable {
+    #kunena table.kblocktable,
+    #gkMainbody table#topic-actions,
+    #kunena table.kmsg.kpublished {
         width: 100%!important;
     }
-
+    .klist-actions-goto {
+        display: none;
+    }
+    #kunena td.kprofile-left {
+        min-width: 112px;
+        width: 112px;
+    }
 }
 
 
