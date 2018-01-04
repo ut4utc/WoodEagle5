@@ -1516,6 +1516,17 @@ a.popoverinfo {
 }
 
 
+/* Fix */
+
+@media screen and (min-width: 300px) and (max-width: 400px)  {
+    .klist-markallcatsread div.fltrt{
+        float: none!important;
+    }
+    #gkMainbody table#kflattable {
+        width: 100%!important;
+    }
+
+}
 
 
 
