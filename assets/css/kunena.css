@@ -1537,7 +1537,8 @@ a.popoverinfo {
     }
 }
 
-/* TODO - make spoiler css */
+/* spoiler */
+
 .kspoiler {
     background: #e9e9e6;
     clear: both;
@@ -1558,6 +1559,9 @@ a.popoverinfo {
     font-weight: bold;
     line-height: 15px;
 }
+
+/* TODO - fix minus, need be add to JS */
+
 .kspoiler-minus {
     background: transparent url("/components/com_kunena/template/wood_eagle5/assets/img/buttons/icon_minus_1.gif") no-repeat scroll left center;
     display: block;
@@ -1569,7 +1573,9 @@ a.popoverinfo {
     padding: 20px;
 }
 
-
+#kunena tbody tr td {
+    padding: 10px;
+}
 
 
 
