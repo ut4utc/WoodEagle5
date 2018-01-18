@@ -42,7 +42,7 @@ INSTALLATION
 
 Kunena is installed via the Joomla component/extension installer. You may download my builds/packages from proinsurer.com.ua via: https://proinsurer.com.ua/en/blog-en/joomla/201-free-download-kunena-5-theme-blueeagle5
 
-The Joomla installers allows you to directly install Kunena via package URL or from a local download of yours.
+The Joomla installers allows you to directly install Kunena via package URL or from a local download of yours or unzip & copy files to WoodEagle5 folder in your_site\components\com_kunena\template\ and then go to Admin panel -> Kunena Forum: Templates -> Wood Eagle5 and setup it to default.
 
 As long as the minimum requirements are met, the Kunena install should take only a few moments. I have spent a great amount of time to automate the entire installation process.
 
