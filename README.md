@@ -69,4 +69,6 @@ The Kunena projects thrives on contributions from the community. I dedicated vol
 
 LICENSE
 
-GNU General Public License v2
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">
+	<img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/3.0/au/88x31.png" />
+</a>
