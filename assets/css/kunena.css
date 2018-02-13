@@ -897,14 +897,13 @@ ul.kpost-profile {
     border-radius: 2px;
     color: #000;
     float: left;
-    margin: 2px;
+    margin: 10px;
     padding: 4px 6px;
 }
 #kunena.layout .nav-tabs li.active a {
     background-color: #595240;
     color: #fff;
     float: left;
-    margin: 2px;
     padding: 4px 6px;
 }
 .nav-tabs::after, .nav-pills::after {
@@ -1330,6 +1329,9 @@ li.markItUpButton ul {
 #kuserform {
     background-color: #fff;
 }
+.kedituser .tabs {
+	padding: 20px;
+}
 .khelprulescontent {
     padding: 20px;
 }
@@ -1537,8 +1539,7 @@ a.popoverinfo {
     }
 }
 
-/* spoiler */
-
+/* TODO - make spoiler css */
 .kspoiler {
     background: #e9e9e6;
     clear: both;
@@ -1559,9 +1560,6 @@ a.popoverinfo {
     font-weight: bold;
     line-height: 15px;
 }
-
-/* TODO - fix minus, need be add to JS */
-
 .kspoiler-minus {
     background: transparent url("/components/com_kunena/template/wood_eagle5/assets/img/buttons/icon_minus_1.gif") no-repeat scroll left center;
     display: block;
@@ -1573,9 +1571,7 @@ a.popoverinfo {
     padding: 20px;
 }
 
-#kunena tbody tr td {
-    padding: 10px;
-}
+
 
 
 

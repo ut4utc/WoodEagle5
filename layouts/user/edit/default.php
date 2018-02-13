@@ -32,7 +32,7 @@ $this->me = KunenaUserHelper::getMyself();
 				<?php echo JHtml::_('form.token'); ?>
 
 				<div class="tabs">
-					<ul id="KunenaUserEdit" class="nav nav-tabs">
+					<ul class="nav nav-tabs">
 						<?php if ($this->profile->userid == $this->me->userid): ?>
 							<li class="active">
 								<a href="#home" data-toggle="tab">
@@ -59,7 +59,7 @@ $this->me = KunenaUserHelper::getMyself();
 						</li>
 					</ul>
 
-					<div id="KunenaUserEdit" class="tab-content">
+					<div class="tab-content">
 						<?php if ($this->profile->userid == $this->me->userid): ?>
 							<div class="tab-pane fade in active" id="home">
 								<?php echo $this->subRequest('User/Edit/User'); ?>
