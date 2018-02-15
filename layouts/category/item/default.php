@@ -21,7 +21,7 @@ $this->addStyleSheet('assets/css/rating.css');
 		<div class="kblock" id="kcatheader">
 			<div class="kheader">
 				<div class="close" data-toggle="collapse" data-target="#kfrontstats_tbody">&times;</div>
-				<h2><span><?php echo JText::_('COM_KUNENA_FORUM_HEADER'); ?></span></h2>
+				<h1><span><?php echo JText::_('COM_KUNENA_FORUM_HEADER'); ?></span></h1>
 			</div>
 			<div class="collapse in" id="kfrontstats_tbody">
 				<div class="kbody">
@@ -53,7 +53,7 @@ $this->addStyleSheet('assets/css/rating.css');
 		<?php if (!empty($this->topicActions)) : ?>
 			<span class="kcheckbox select-toggle"><input class="kcheckall" type="checkbox" name="toggle" value="" /></span>
 		<?php endif; ?>
-		<h2><span><?php echo $this->escape($this->headerText); ?></span></h2>
+		<h1><span><?php echo $this->escape($this->headerText); ?></span></h1>
 	</div>
 	<div class="kcontainer">
 		<div class="kbody">
